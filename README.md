@@ -1,10 +1,13 @@
-## Projeto base para o evento Bootcamp Imersão AWS que irei realizar.
+## Project BIA for trainning deploy
 
-### Período do evento: 18 a 24 de Março/2024 (Online e ao Vivo às 20h)
+#### Run migrations
 
-[>> Página de Inscrição do evento](https://org.imersaoaws.com.br/github/readme)
+```
+docker compose exec server bash -c 'npx sequelize db:create'
+```
 
-#### Para rodar as migrations no container ####
+#### Run migrations
+
 ```
 docker compose exec server bash -c 'npx sequelize db:migrate'
 ```
