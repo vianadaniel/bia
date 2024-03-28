@@ -1,7 +1,7 @@
 services:
   server:
     build:
-     context: .
+      context: /Users/viana/Documents/GitHub/bia
     container_name: bia
     environment:
       DB_HOST: database
