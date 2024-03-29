@@ -1,0 +1,17 @@
+# @format
+
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 12
+  build:
+    commands:
+      - echo Build started on `date`
+      - npm install
+      - npm run build
+      - npm run test
+  post_build:
+    commands:
+      - echo Build completed on `date`
